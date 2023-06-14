@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Message for My Girlfriend</title>
+    <style>
+        @keyframes float {
+            0% { transform: translate(0, 100vh); }
+            100% { transform: translate(0, -100vh); }
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-1px); }
+            75% { transform: translateX(0); }
+            100% { transform: translateX(0); }
+        }
+
+        body {
+            font-family: 'Mitr', sans-serif; /* Updated font */
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .fullscreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .love-letter {
+            max-width: 760px;
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: float 8s linear infinite;
+            position: relative;
+            top: -2cm;
+            animation: shake 4s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .background-emoji {
+            position: absolute;
+            animation: float 10s linear infinite;
+            font-size: 50px;
+            opacity: 0.6;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> <!-- Added font link -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const emojis = ['💗', '🤏🏻'];
+            const container = document.querySelector('.fullscreen');
+
+            for (let i = 0; i < 20; i++) {
+                const emoji = document.createElement('span');
+                emoji.classList.add('background-emoji');
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.top = Math.random() * 100 + 'vh';
+                container.appendChild(emoji);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="fullscreen">
+        <div class="love-letter">
+            <h1 style="font-size: 40px;">รักจะจุ้ยที่สุดในโลกเล๊ยย</h1>
+            <p>--------------------------------</p>
+            <p>I wanted to take a moment to express just how much you mean to me. You are the light of my life, and every day I'm grateful to have you by my side.</p>
+            <p>Your smile brightens up my world, and your laughter is like music to my ears. The way you understand and support me is beyond words.</p>
+            <p>With you, I've found a love that is pure and unconditional. Your love has brought immense joy and happiness into my life, and I cherish every moment we spend together.</p>
+            <p>Thank you for being my best friend, my partner, and my soulmate. I promise to love and care for you, today and always.</p>
+            <p>Forever yours,</p>
+            <p>Your Name</p>
+
+            <p>อะไรครับเนี่ย</p>
+            <p>อะไรครับเนี่ย</p>
+
+
+
+
+
+
+
+
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <title>Animated Clock Concept</title>
+              <style>
+                body {
+                  padding: 0;
+                  margin: 0;
+                  background-color: #222;
+                  overflow: hidden;
+                }
+            
+                svg {
+                  position: absolute;
+                  width: 800px;
+                  height: 480px;
+                  left: 0;
+                  right: 0;
+                  top: -10;
+                  bottom: 0;
+                  margin: auto;
+                  background-image: linear-gradient(Black 60%, #215769 100%);
+                  border-radius: 10px;
+                  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+                }
+            
+                .bgDot {
+                  stroke: none;
+                  fill: #215769;
+                }
+            
+                .clockCircle {
+                  fill: none;
+                  stroke: #2a2a2a;
+                }
+            
+                .clockArc {
+                  fill: none;
+                  stroke: #1bbccb;
+                }
+            
+                .clockDot {
+                  fill: #8dd1e0;
+                }
+            
+                .caption {
+                  font-family: "Source Sans Pro";
+                  font-weight: 300;
+                  fill: white;
+                }
+            
+                .dayText {
+                  font-size: 1.7rem;
+                }
+            
+                .dateText {
+                  font-size: 2.5rem;
+                  font-weight: 400;
+                }
+            
+                .timeText {
+                  font-family: "Open Sans";
+                  font-size: 5rem;
+                  font-weight: 600;
+                  fill: white;
+                }
+              </style>
+            </head>
+            <body>
+              <svg>
+                <defs>
+                  <pattern id="dotPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <circle class="bgDot" cx="5" cy="5" r="2" />
+                  </pattern>
+                  <radialGradient id="backHoleBelowClock" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="50%" style="stop-color:rgb(0,0,0);stop-opacity:0.7" />
+                    <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0" />
+                  </radialGradient>
+                  <radialGradient id="blackVignette" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="40%" style="stop-color:rgb(0,0,0);stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+                  </radialGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                    <feMerge>
+                      <feMergeNode in="coloredBlur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="shadow" />
+                    <feOffset dx="1" dy="1" />
+                    <feMerge>
+                      <feMergeNode />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+            
+                <!-- Background objects -->
+                <rect x="0" y="0" width="100%" height="100%" style="stroke: #000000; fill: url(#dotPattern);" />  
+                <ellipse cx="500" cy="240" rx="300" ry="300" fill="url(#backHoleBelowClock)" />  
+                <ellipse cx="500" cy="240" rx="600" ry="600" fill="url(#blackVignette)" /> 
+                
+                <!-- Clock objects -->
+                <circle class="clockCircle hour" cx="500" cy="240" r="150" stroke-width="6" />
+                <path id="arcHour" class="clockArc hour" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+                <circle class="clockDot hour" r="8" filter="url(#glow)" />
+                
+                <circle class="clockCircle minute" cx="500" cy="240" r="170" stroke-width="3" />
+                <path id="arcMinute" class="clockArc minute" stroke-width="3" stroke-linecap="round" filter="url(#glow)" />
+                <circle class="clockDot minute" r="5" filter="url(#glow)" />
+                
+                <!-- Caption objects -->
+                <text id="time" class="caption timeText" x="500" y="240" stroke-width="0" text-anchor="middle" alignment-baseline="middle" filter="url(#shadow)"></text>
+                
+                <text id="day" class="caption dayText" x="300" y="210" stroke-width="0" text-anchor="end" alignment-baseline="middle" filter="url(#shadow)"></text>
+                <text id="date" class="caption dateText" x="300" y="250" stroke-width="0" text-anchor="end" alignment-baseline="middle" filter="url(#shadow)"></text>
+              </svg>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+              <script>
+                var describeArc, polarToCartesian, setCaptions;
+            
+                polarToCartesian = function(centerX, centerY, radius, angleInDegrees) {
+                  var angleInRadians;
+                  angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+                  return {
+                    x: centerX + radius * Math.cos(angleInRadians),
+                    y: centerY + radius * Math.sin(angleInRadians)
+                  };
+                };
+            
+                describeArc = function(x, y, radius, startAngle, endAngle) {
+                  var arcSweep, end, start;
+                  start = polarToCartesian(x, y, radius, endAngle);
+                  end = polarToCartesian(x, y, radius, startAngle);
+                  arcSweep = endAngle - startAngle <= 180 ? '0' : '1';
+                  return ['M', start.x, start.y, 'A', radius, radius, 0, arcSweep, 0, end.x, end.y].join(' ');
+                };
+            
+                setCaptions = function() {
+                  var dot, hour, hourArc, minArc, minute, now, pos;
+                  now = new Date();
+                  hour = now.getHours() % 12;
+                  minute = now.getMinutes();
+                  hourArc = (hour * 60 + minute) / (12 * 60) * 360;
+                  minArc = (minute * 60) / (60 * 60) * 360;
+            
+            // Set clock time
+            document.getElementById("time").textContent = moment().format("HH:mm");
+            document.getElementById("day").textContent = moment().format("dddd");
+            document.getElementById("date").textContent = moment().format("MMMM Do, YYYY");
+            
+            // Set hour hand position
+            pos = polarToCartesian(500, 240, 150, hourArc);
+            document.querySelector(".hour").setAttribute("d", describeArc(500, 240, 150, -90, hourArc));
+            document.querySelector(".clockDot.hour").setAttribute("cx", pos.x);
+            document.querySelector(".clockDot.hour").setAttribute("cy", pos.y);
+            
+            // Set minute hand position
+            pos = polarToCartesian(500, 240, 170, minArc);
+            document.querySelector(".minute").setAttribute("d", describeArc(500, 240, 170, -90, minArc));
+            document.querySelector(".clockDot.minute").setAttribute("cx", pos.x);
+            document.querySelector(".clockDot.minute").setAttribute("cy", pos.y);
+            };
+            
+            // Update the clock every second
+            setInterval(setCaptions, 1000);
+            </script>
+            </body>
+            </html>
+
+
+
+
+
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+  <script>
+    function countDays() {
+      var startDate = new Date("2023-02-03");
+      var presentDate = new Date();
+      
+      var timeDiff = presentDate.getTime() - startDate.getTime();
+      var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+      
+      document.getElementById("result").textContent = "Number of our love: " + daysDiff + "  days.";
+    }
+    
+    // Automatically count days on page load
+    window.onload = countDays;
+  </script>
+</head>
+<body>
+  <p id="result"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
